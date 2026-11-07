@@ -9,7 +9,7 @@ import requests
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
-DB_PATH = Path(__file__).with_name("history.db")
+DB_PATH = Path("/data/history.db")
 CATALOG_URL = os.getenv("CATALOG_URL", "http://127.0.0.1:8001")
 
 
